@@ -23,7 +23,6 @@ const GlobaContext = createContext<GlobalContextType | undefined>(undefined);
 export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
   const { data: user, loading, refetch } = useAppwrite({ fn: getCurrentUser });
   const isLoggedIn = !!user;
-  console.log(JSON.stringify(user, null, 2));
   return (
     <GlobaContext.Provider value={{ isLoggedIn, user, loading, refetch }}>
       {children}

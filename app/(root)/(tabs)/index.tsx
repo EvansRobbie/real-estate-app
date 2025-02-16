@@ -13,17 +13,6 @@ export default function Index() {
       <Text className="text-2xl text-red-500 font-rubik">
         Welcome to real estate
       </Text>
-      <Link href="/sign-in">Sign in</Link>
-      <Link href="/explore">Explore</Link>
-      <Link href="/profile">Profile</Link>
-      <Link
-        href={{
-          pathname: "/properties/[id]",
-          params: { id: "1" },
-        }}
-      >
-        Properties
-      </Link>
     </View>
   );
 }

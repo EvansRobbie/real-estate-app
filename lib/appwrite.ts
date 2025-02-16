@@ -36,7 +36,7 @@ export const login = async () => {
     const userId = url.searchParams.get("userId")?.toString();
     if (!secret || !userId) throw new Error("Failed to login");
 
-    const session = await account.createSession(secret, userId);
+    const session = await account.createSession(userId, secret);
     if (!session) throw new Error("Failed to login");
     return session;
   } catch (error) {
