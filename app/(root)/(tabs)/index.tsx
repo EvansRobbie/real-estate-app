@@ -13,6 +13,6 @@ export default function Index() {
       <Text className="text-2xl text-red-500 font-rubik">
         Welcome to real estate
       </Text>
-    </View>
+    {/* </View> */}
   );
 }
